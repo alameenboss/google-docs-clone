@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+}
+
+
+.new {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

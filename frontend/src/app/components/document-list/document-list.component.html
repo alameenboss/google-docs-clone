@@ -1,0 +1,35 @@
+<div class="header">
+    <div class="brand">
+        <span class="docs" [routerLink]="'list'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <path fill="#2196f3"
+                    d="M37,45H11c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h19l10,10v29C40,43.657,38.657,45,37,45z" />
+                <path fill="#bbdefb" d="M40 13L30 13 30 3z" />
+                <path fill="#1565c0" d="M30 13L40 23 40 13z" />
+                <path fill="#e3f2fd" d="M15 23H33V25H15zM15 27H33V29H15zM15 31H33V33H15zM15 35H25V37H15z" />
+            </svg>
+            <span>Docs</span>
+        </span>
+    </div>
+    <div class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+            <circle style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="13" cy="13" r="9" />
+            <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" x1="26"
+                y1="26" x2="19.437" y2="19.437" />
+        </svg>
+        <input type="text" name="search" id="search" placeholder="Search...">
+
+    </div>
+</div>
+<div class="cards">
+    <div class="card" *ngFor="let document of documents">
+        <div [innerHTML]="document.content" class="html-content"></div>
+        <div class="footer" >
+            <span [routerLink]="'/edit/'+document.docId">{{document.docId}}</span>
+            <button mat-icon-button (click)="delete(document.docId)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+       
+    </div>
+</div>

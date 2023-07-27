@@ -1,0 +1,114 @@
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 10px;
+  height: 32px;
+  align-items: center;
+  background-color: var(--white);
+  z-index: 100;
+  border-bottom: 1px solid lightgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  display: flex;
+  justify-content: flex-start;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+
+  .docs {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      svg {
+          width: 32px;
+          height: 32px;
+      }
+
+      span {
+          margin-left: 8px;
+      }
+  }
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  border-radius: 10px;
+  width: 400px;
+  background-color: #cfcdcd87;
+  margin: 0px auto;
+
+  svg {
+      height: 24px;
+      width: 24px;
+  }
+
+  input {
+      background: none;
+      outline: none;
+      border: none;
+      margin-left: 5px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+  }
+}
+
+.search-bar+input:focus {
+  border: 1px solid gray;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 100px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  background-color: var(--white);
+  width: 300px;
+  margin: 5px;
+
+  .html-content {
+    height: 250px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    padding: 0px 10px;
+    margin: 2px;
+    border-radius: 5px;
+  }
+}
+
+.card .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: smaller;
+  font-weight: 600;
+  margin: 5px;
+
+  span {
+    cursor: pointer;
+    height: 100%;
+    padding: 5px;
+  }
+
+  span:hover {
+    background-color: #cfcdcd87;
+    transition: all 0.2s ease-in;
+  }
+}

@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Confirmation</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Are you sure want to detele this item?</h3>
+  <p>Cliking on the Ok button will delete the item</p>
+
+  <p>To cancel this action and close this dialog , click on Cancel Button</p>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button  color="accent" mat-dialog-close>Cancel</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="true" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
