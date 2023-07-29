@@ -399,3 +399,16 @@ FodyWeavers.xsd
 
 
 frontend/.angular/**
+frontend/src/app/services/document.service.ts
+frontend/dist/3rdpartylicenses.txt
+frontend/dist/971.10e52dfd8c7253f2.js
+frontend/dist/favicon.ico
+frontend/dist/index.html
+frontend/dist/main.2063ec24a963eee2.js
+frontend/dist/polyfills.ddf38603621198b1.js
+frontend/dist/runtime.d703726f2951ca4a.js
+frontend/dist/styles.3c4cf3d26b111cde.css
+frontend/dist/assets/documents.json
+frontend/dist/assets/icon/icons8-google-docs.svg
+frontend/dist/assets/icon/icons8-new-copy-80.png
+frontend/dist/assets/icon/icons8-search.svg
