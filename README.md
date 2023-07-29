@@ -14,7 +14,7 @@ This project is a Google Docs clone built with **Angular** for the frontend, **A
 
 ## Demo
 
-Demo of the frontend with fake backend version [Demo](https://docs-google-clone.netlify.app/) here
+Demo of the frontend with fake backend version here [Demo](https://docs-google-clone.netlify.app/)
 
 ## Prerequisites
 
